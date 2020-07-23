@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트핸들러+내/외부JS</title>
+</head>
+
+<body>
+    <div id="wrap">
+
+
+
+        <h1>이벤트핸들러+내/외부JS</h1>
+
+        <h2 onclick="sample()">클릭하면 경고창 실행!!</h2>
+
+
+
+
+
+        <h2 id="changeColor" onmouseover="test()">마우스를 올리면 색상변경!!</h2>
+    </div>
+
+    <script>
+        function sample() {
+            alert("경고창이 실행 OK!!!");
+        }
+
+        function test() {
+            document.getElementById("changeColor").style.color = "#e5f";
+        }
+    </script>
+
+
+</body></html>
